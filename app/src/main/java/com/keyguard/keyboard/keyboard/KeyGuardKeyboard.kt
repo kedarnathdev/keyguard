@@ -131,7 +131,7 @@ class KeyGuardKeyboard(private val context: Context) {
         // Row 4: ?123 , Space . Enter
         keys.add(Key(
             code = KEYCODE_MODE_CHANGE,
-            label = "?123",
+            label = "SYMB",
             width = 1,
             isModifier = true
         ))
