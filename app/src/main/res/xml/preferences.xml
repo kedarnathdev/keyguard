@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <PreferenceCategory 
+        android:title="@string/settings_appearance"
+        app:iconSpaceReserved="false">
+        
+        <ListPreference
+            android:key="theme_mode"
+            android:title="@string/settings_theme"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values"
+            android:defaultValue="system"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false" />
+        
+        <SwitchPreferenceCompat
+            android:key="key_vibration"
+            android:title="@string/settings_key_vibration"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+        
+        <SwitchPreferenceCompat
+            android:key="key_sound"
+            android:title="@string/settings_key_sound"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+        
+        <SwitchPreferenceCompat
+            android:key="key_popup"
+            android:title="@string/settings_key_popup"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="Text Input"
+        app:iconSpaceReserved="false">
+        
+        <SwitchPreferenceCompat
+            android:key="autocorrect"
+            android:title="@string/settings_autocorrect"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+        
+        <SwitchPreferenceCompat
+            android:key="suggestions"
+            android:title="@string/settings_suggestions"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+        
+        <SwitchPreferenceCompat
+            android:key="learn_new_words"
+            android:title="@string/settings_learn_new_words"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="Privacy"
+        app:iconSpaceReserved="false">
+        
+        <Preference
+            android:key="privacy_info"
+            android:title="@string/privacy_title"
+            android:summary="@string/privacy_message"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    
+</PreferenceScreen>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Theme Colors -->
+    <color name="primary">#6200EE</color>
+    <color name="primary_dark">#3700B3</color>
+    <color name="accent">#03DAC5</color>
+    
+    <!-- Light Theme -->
+    <color name="keyboard_bg_light">#FFFFFF</color>
+    <color name="key_bg_light">#F5F5F5</color>
+    <color name="key_pressed_light">#E0E0E0</color>
+    <color name="key_text_light">#000000</color>
+    <color name="key_hint_text_light">#757575</color>
+    <color name="suggestion_bg_light">#FFFFFF</color>
+    
+    <!-- Dark Theme -->
+    <color name="keyboard_bg_dark">#1A1A1A</color>
+    <color name="key_bg_dark">#2D2D2D</color>
+    <color name="key_pressed_dark">#404040</color>
+    <color name="key_text_dark">#FFFFFF</color>
+    <color name="key_hint_text_dark">#B0B0B0</color>
+    <color name="suggestion_bg_dark">#1A1A1A</color>
+    
+    <!-- Special Keys -->
+    <color name="key_action_bg">#6200EE</color>
+    <color name="key_space_bg">#E0E0E0</color>
+    <color name="key_delete_bg">#F44336</color>
+</resources>

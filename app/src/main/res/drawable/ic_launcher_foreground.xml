@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Shield icon representing privacy -->
+    <path
+        android:fillColor="#6200EE"
+        android:pathData="M54,10L18,28v30c0,18 15,34 36,40 21,-6 36,-22 36,-40V28L54,10z"/>
+    
+    <!-- Key icon inside shield -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,45c-3,0 -5,2 -5,5s2,5 5,5c2,0 4,-1 4,-3h6v4h4v-4h4v-4H54c0,2 -2,3 -4,3v-6z"/>
+</vector>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KeyGuard</string>
+    <string name="keyboard_name">KeyGuard Keyboard</string>
+    <string name="subtype_en_US">English (US)</string>
+    
+    <!-- Setup -->
+    <string name="setup_title">Welcome to KeyGuard</string>
+    <string name="setup_subtitle">Privacy-First Keyboard</string>
+    <string name="setup_description">KeyGuard respects your privacy. No data collection, no telemetry, no internet access. Your typing stays on your device.</string>
+    <string name="setup_enable_keyboard">Enable Keyboard</string>
+    <string name="setup_select_keyboard">Select as Default</string>
+    <string name="setup_all_set">All Set!</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_theme_system">System Default</string>
+    <string name="settings_key_vibration">Key Vibration</string>
+    <string name="settings_key_sound">Key Sound</string>
+    <string name="settings_key_popup">Key Popup</string>
+    <string name="settings_autocorrect">Autocorrect</string>
+    <string name="settings_suggestions">Word Suggestions</string>
+    <string name="settings_learn_new_words">Learn New Words</string>
+    
+    <!-- Keyboard -->
+    <string name="key_space">Space</string>
+    <string name="key_enter">Enter</string>
+    <string name="key_delete">Delete</string>
+    <string name="key_shift">Shift</string>
+    <string name="key_abc">ABC</string>
+    <string name="key_123">?123</string>
+    
+    <!-- Privacy -->
+    <string name="privacy_title">Privacy Policy</string>
+    <string name="privacy_message">KeyGuard is designed from the ground up to protect your privacy:</string>
+    <string name="privacy_no_internet">✓ No internet access</string>
+    <string name="privacy_no_telemetry">✓ No telemetry or analytics</string>
+    <string name="privacy_no_cloud">✓ No cloud storage</string>
+    <string name="privacy_local_only">✓ All data stays on device</string>
+    <string name="privacy_open_source">✓ Open source code</string>
+</resources>
