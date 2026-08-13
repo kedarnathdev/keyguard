@@ -31,26 +31,23 @@ jobs:
     - name: Run unit tests
       run: ./gradlew test
       
-    - name: Build Release APK
+    - name: Build Debug APK (for testing)
+      run: ./gradlew assembleDebug
+      
+    - name: Build Release APK (unsigned)
       run: ./gradlew assembleRelease
       
-    - name: Sign APK
-      uses: r0adkll/sign-android-release@v1
-      id: sign_app
-      with:
-        releaseDirectory: app/build/outputs/apk/release
-        signingKeyBase64: ${{ secrets.SIGNING_KEY }}
-        alias: ${{ secrets.ALIAS }}
-        keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
-        keyPassword: ${{ secrets.KEY_PASSWORD }}
-      env:
-        BUILD_TOOLS_VERSION: "34.0.0"
-      
-    - name: Upload APK artifact
+    - name: Upload Debug APK artifact
       uses: actions/upload-artifact@v4
       with:
-        name: keyguard-release-apk
-        path: ${{steps.sign_app.outputs.signedReleaseFile}}
+        name: keyguard-debug-apk
+        path: app/build/outputs/apk/debug/app-debug.apk
+        
+    - name: Upload Release APK artifact (unsigned)
+      uses: actions/upload-artifact@v4
+      with:
+        name: keyguard-release-apk-unsigned
+        path: app/build/outputs/apk/release/app-release-unsigned.apk
         
   release:
     needs: build
@@ -64,7 +61,7 @@ jobs:
     - name: Download APK artifact
       uses: actions/download-artifact@v4
       with:
-        name: keyguard-release-apk
+        name: keyguard-debug-apk
         
     - name: Get version name
       id: version
@@ -99,7 +96,7 @@ jobs:
           5. Enable KeyGuard and set as default
           
           **Supported Android versions:** Android 8.0 (API 26) and above
-        files: app-release.apk
+        files: app-debug.apk
         draft: false
         prerelease: false
       env:
