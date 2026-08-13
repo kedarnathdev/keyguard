@@ -32,7 +32,7 @@
     <string name="key_delete">Delete</string>
     <string name="key_shift">Shift</string>
     <string name="key_abc">ABC</string>
-    <string name="key_123">?123</string>
+    <string name="key_symbols">?123</string>
     
     <!-- Privacy -->
     <string name="privacy_title">Privacy Policy</string>
