@@ -5,7 +5,7 @@
 ![KeyGuard Logo](app/src/main/res/drawable/ic_launcher_foreground.png)
 
 [![Build Status](https://github.com/kedarnathdev/keyguard/workflows/Build%20and%20Release%20APK/badge.svg)](https://github.com/kedarnathdev/keyguard/actions)
-[![Release](https://img.shields.io/github/v/release/kedarnathdev/keyguard?include_prereleases)](https://github.com/kedarnathdev/keyguard/releases)
+[![Release](https://img.shields.io/github/v/release/kedarnathdev/keyguard)](https://github.com/kedarnathdev/keyguard/releases/latest)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 [![Android](https://img.shields.io/badge/Android-8.0%2B-green.svg)](https://www.android.com/)
 
